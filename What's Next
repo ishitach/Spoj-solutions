@@ -1,0 +1,38 @@
+Made by: Ishita Chourasia
+e-mail id:ishitachourasia@gmail.com
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+public static void main (String[] args) throws java.lang.Exception
+{
+// your code goes here
+Scanner s=new Scanner(System.in);
+int a[]=new int[1000];
+int b[]=new int[1000];
+int c[]=new int[1000];
+p:{ for(int i=0;i<1000;i++){
+a[i]=s.nextInt();
+b[i]=s.nextInt();
+c[i]=s.nextInt();
+if(a[i]==b[i] && a[i]==c[i] && a[i]==0){ break p; }}
+}
+z: {for(int i=0;i<1000;i++){
+if(a[i]==b[i] && a[i]==c[i] && a[i]==0){ break z;}
+else {
+if(b[i]-a[i]==c[i]-b[i])
+{
+System.out.println("AP "+ (c[i]*2-b[i]));
+}
+else System.out.println("GP "+ c[i]*b[i]/a[i]);
+}
+}
+}
+}
+} 
