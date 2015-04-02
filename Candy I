@@ -1,0 +1,33 @@
+Made by: Ishita Chourasia
+e-mail id: ishitachourasia@gmail.com
+Code written in C
+
+
+    #include<stdio.h>
+    int main()
+    {
+    int t,steps,i,tot;
+    scanf("%d",&t);
+    int a[10005];
+    while(t!=-1)
+    {
+    tot=0;
+    steps=0;
+    for(i=0;i<t;i++)
+    {
+    scanf("%d",&a[i]);
+    tot+=a[i];
+    }
+    if(tot%t!=0)
+    printf("-1\n");
+    else
+    {
+    for(i=0;i<t;i++)
+    while(a[i]-->(tot/t))
+    steps++;
+    printf("%d\n",steps);
+    }
+    scanf("%d",&t);
+    }
+    return 0;
+    } 
