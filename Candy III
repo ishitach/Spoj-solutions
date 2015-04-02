@@ -1,0 +1,37 @@
+#Made by: Ishita Chourasia
+#e-mail id: ishitachourasia@gmail.com
+#Language: Java
+
+
+ 
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*;
+
+class Ideone
+{
+public static void main (String[] args) throws java.lang.Exception
+{
+
+Scanner s=new Scanner(System.in);
+int t=s.nextInt();
+
+for(int j=0;j<t;j++){
+int n=s.nextInt();
+BigInteger a[]=new BigInteger[n];
+int sum=0;
+for(int i=0;i<n;i++){
+a[i]=s.nextBigInteger();
+}
+
+for(int i=0;i<n;i++){
+sum=(sum%n+(a[i].mod(BigInteger.valueOf(n))).intValue())%n;
+}
+
+if(sum%n==0)
+System.out.println("YES");
+else System.out.println("NO");
+}
+}
+} 
