@@ -1,0 +1,38 @@
+#Made by: Ishita Chourasia
+#e-mail id: ishitachourasia@gmail.com
+
+
+#include<stdio.h>
+int main()
+{
+int j,i,t;
+int arr[1000000];
+int mod=4687;
+i=0;
+while(i<1000000)
+{
+arr[i]=(mod*10)/33102;
+mod=(mod*10)%33102;
+i++;
+}
+//scanf("%d",&t);
+t=1;
+while(t--)
+{
+j=10000;
+if(j==0)
+printf("%d\n",3);
+else
+{
+printf("3.");
+i=0;
+while(j--)
+{
+printf("%d",arr[i]);
+i++;
+}
+printf("\n");
+}
+}
+return 0;
+}
