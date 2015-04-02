@@ -1,0 +1,27 @@
+Made by: Ishita Chourasia
+e-mail id: ishitachourasia@gmail.com
+Code written in Java
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*;
+
+class Ideone
+{
+public static void main (String[] args) throws java.lang.Exception
+{
+]
+Scanner s=new Scanner(System.in);
+for(int i=0;i<10;i++){
+BigInteger a=s.nextBigInteger();
+BigInteger b=s.nextBigInteger();
+BigInteger two=BigInteger.valueOf(2);
+BigInteger x=(a.add(b)).divide(two);
+BigInteger y=(a.subtract(b)).divide(two);
+System.out.println(x);System.out.println(y);
+}
+}
+} 
