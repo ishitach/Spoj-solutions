@@ -1,0 +1,29 @@
+// Made by : Ishita Chourasia
+//email id : ishitachourasia@gmail.com
+//Code written in Java 
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner s=new Scanner(System.in);
+		int t =s.nextInt();
+		for(int j=0;j<t;j++){
+			int p=s.nextInt();int sum=0;
+			int a[]=new int[p];int b[]=new int[p];int h[]=new int[p];
+			for(int i=0;i<p;i++) a[i]=s.nextInt();
+			for(int i=0;i<p;i++) b[i]=s.nextInt();
+			Arrays.sort(a);Arrays.sort(b);
+			for(int i=0;i<p;i++){ h[i]=a[i]*b[i];sum+=h[i];}
+			System.out.println(sum);
+		}
+	}
+} 
