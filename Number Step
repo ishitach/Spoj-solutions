@@ -1,0 +1,30 @@
+//Made by : Ishita Chourasia
+//email id : ishitachourasia@gmail.com
+ 
+ 
+ 
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*;
+
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		Scanner s=new Scanner(System.in);
+		
+		int t=s.nextInt();
+		for(int i=0;i<t;i++){
+			BigInteger x=s.nextBigInteger();BigInteger two=BigInteger.valueOf(2);BigInteger one=BigInteger.valueOf(1);
+			BigInteger y=s.nextBigInteger();BigInteger zero=BigInteger.valueOf(0);
+			if(((x.subtract(y)).intValue()==0) || ((x.subtract(y)).intValue()==2)){
+				if((x.mod(two)).intValue()==0)
+				System.out.println(x.add(y));
+				else System.out.println(x.add(y).subtract(one));
+			}
+			else System.out.println("No Number");
+		}
+	}
+} 
