@@ -1,0 +1,32 @@
+//Made by: Ishita Chourasia
+//email id: ishitachourasia@gmail.com
+
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+ 
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner s=new Scanner(System.in);
+		 int a[]=new int[100];
+		 p:{for(int i=0;i<100;i++){
+		 	a[i]=s.nextInt();
+		 	if(a[i]==0) break p;}
+		 }
+		z: {
+		for(int i=0;i<a.length;i++){
+	if(a[i]==0)	break z;
+	else 
+		{	int p=a[i];
+			int q=(p*(p+1)*(2*p+1))/6;
+			System.out.println(q);
+		}
+	}}
+}
+} 
