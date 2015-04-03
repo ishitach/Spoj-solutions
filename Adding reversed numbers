@@ -1,0 +1,49 @@
+//Made by: Ishita Chourasia
+// email id : ishitachourasia@gmail.com
+
+
+import java.util.*;
+class Reverse{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+
+int sum=0;
+
+for(int i=0;i<n;i++)
+{
+int m=s.nextInt();
+int k=s.nextInt();
+int r=findreverse(m);
+int p=findreverse(k);
+sum=r+p;
+int sumr=findreverse(sum);
+System.out.println(sumr);
+}
+ 
+   /*while (k != 0)
+   {
+      reverse1 = reverse1 * 10;
+      reverse1= reverse1 + n%10;
+      k = k/10;
+   }
+   sum=reverse+reverse1;
+   while (sum != 0)
+   {
+      sumr = sumr * 10;
+      sumr = sumr + n%10;
+      sum= sum/10;
+   }
+   System.out.println(sumr);
+}*/
+}
+private static int findreverse(int m){
+	int reverse=0;
+while (m != 0)
+   {
+      reverse = reverse * 10;
+      reverse = reverse + m%10;
+      m = m/10;
+   }
+   return reverse;}
+}
